@@ -7,4 +7,5 @@
 
 struct Cats: Decodable {
     let url: String?
+    let id: String?
 }

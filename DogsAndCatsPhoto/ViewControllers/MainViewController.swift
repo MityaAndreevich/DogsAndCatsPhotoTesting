@@ -21,17 +21,6 @@ class MainViewController: UICollectionViewController {
     
     let userActions = UserAction.allCases
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
-
-    
-    // MARK: - Navigation
-    
-    
-
-
     // MARK: UICollectionViewDataSource
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         userActions.count
@@ -53,7 +42,6 @@ class MainViewController: UICollectionViewController {
         case .downloadDogImage: performSegue(withIdentifier: "showDogImage", sender: nil)
             
         case .downloadCatImage: performSegue(withIdentifier: "showCatImage", sender: nil)
-            
         }
     }
     
@@ -64,7 +52,6 @@ class MainViewController: UICollectionViewController {
             switch segue.identifier {
             case "showDogImage": imageVC.fetchImageDog()
             case "showCatImage": imageVC.fetchImageCat()
-    
             default: break
             }
         }

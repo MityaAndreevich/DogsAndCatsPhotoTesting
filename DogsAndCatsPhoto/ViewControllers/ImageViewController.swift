@@ -45,6 +45,7 @@ extension ImageViewController {
                 }
                 DispatchQueue.main.async {
                     self.imageView.reloadInputViews()
+                    activityIndicator.stopAnimating()
                 }
                 
             } catch let error {
@@ -70,6 +71,7 @@ extension ImageViewController {
                   }
                   DispatchQueue.main.async {
                       self.imageView.reloadInputViews()
+                      activityIndicator.stopAnimating()
                   }
                   
               } catch let error {
