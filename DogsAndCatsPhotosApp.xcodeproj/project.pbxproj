@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		5F025F7E2700DC38004E4DD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F025F7D2700DC38004E4DD7 /* AppDelegate.swift */; };
 		5F025F802700DC38004E4DD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F025F7F2700DC38004E4DD7 /* SceneDelegate.swift */; };
-		5F025F822700DC38004E4DD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F025F812700DC38004E4DD7 /* ViewController.swift */; };
 		5F025F852700DC38004E4DD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F025F832700DC38004E4DD7 /* Main.storyboard */; };
 		5F025F872700DC39004E4DD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F025F862700DC39004E4DD7 /* Assets.xcassets */; };
 		5F025F8A2700DC39004E4DD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F025F882700DC39004E4DD7 /* LaunchScreen.storyboard */; };
+		5F025F9427011D15004E4DD7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F025F9327011D15004E4DD7 /* MainViewController.swift */; };
+		5F025F9627011D3A004E4DD7 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F025F9527011D3A004E4DD7 /* ImageViewController.swift */; };
+		5F025F9A27011E6B004E4DD7 /* UserActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F025F9927011E6B004E4DD7 /* UserActionCell.swift */; };
+		5F025F9C27012334004E4DD7 /* Dogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F025F9B27012334004E4DD7 /* Dogs.swift */; };
+		5F025F9F2703ABF3004E4DD7 /* Cats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F025F9E2703ABF3004E4DD7 /* Cats.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5F025F7A2700DC38004E4DD7 /* CryptoCurrencyRateApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoCurrencyRateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F025F7A2700DC38004E4DD7 /* DogsAndCatsPhotosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogsAndCatsPhotosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F025F7D2700DC38004E4DD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F025F7F2700DC38004E4DD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5F025F812700DC38004E4DD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5F025F842700DC38004E4DD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F025F862700DC39004E4DD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F025F892700DC39004E4DD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F025F8B2700DC39004E4DD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F025F9327011D15004E4DD7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5F025F9527011D3A004E4DD7 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		5F025F9927011E6B004E4DD7 /* UserActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionCell.swift; sourceTree = "<group>"; };
+		5F025F9B27012334004E4DD7 /* Dogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dogs.swift; sourceTree = "<group>"; };
+		5F025F9E2703ABF3004E4DD7 /* Cats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cats.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +48,7 @@
 		5F025F712700DC38004E4DD7 = {
 			isa = PBXGroup;
 			children = (
-				5F025F7C2700DC38004E4DD7 /* CryptoCurrencyRateApp */,
+				5F025F7C2700DC38004E4DD7 /* DogsAndCatsPhoto */,
 				5F025F7B2700DC38004E4DD7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +56,59 @@
 		5F025F7B2700DC38004E4DD7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5F025F7A2700DC38004E4DD7 /* CryptoCurrencyRateApp.app */,
+				5F025F7A2700DC38004E4DD7 /* DogsAndCatsPhotosApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5F025F7C2700DC38004E4DD7 /* CryptoCurrencyRateApp */ = {
+		5F025F7C2700DC38004E4DD7 /* DogsAndCatsPhoto */ = {
 			isa = PBXGroup;
 			children = (
 				5F025F7D2700DC38004E4DD7 /* AppDelegate.swift */,
 				5F025F7F2700DC38004E4DD7 /* SceneDelegate.swift */,
-				5F025F812700DC38004E4DD7 /* ViewController.swift */,
-				5F025F832700DC38004E4DD7 /* Main.storyboard */,
+				5F025F922700DC80004E4DD7 /* ViewControllers */,
+				5F025F9D2701233C004E4DD7 /* Models */,
+				5F025F912700DC72004E4DD7 /* Screens */,
 				5F025F862700DC39004E4DD7 /* Assets.xcassets */,
-				5F025F882700DC39004E4DD7 /* LaunchScreen.storyboard */,
 				5F025F8B2700DC39004E4DD7 /* Info.plist */,
 			);
-			path = CryptoCurrencyRateApp;
+			path = DogsAndCatsPhoto;
+			sourceTree = "<group>";
+		};
+		5F025F912700DC72004E4DD7 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5F025F832700DC38004E4DD7 /* Main.storyboard */,
+				5F025F882700DC39004E4DD7 /* LaunchScreen.storyboard */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		5F025F922700DC80004E4DD7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5F025F9327011D15004E4DD7 /* MainViewController.swift */,
+				5F025F9527011D3A004E4DD7 /* ImageViewController.swift */,
+				5F025F9927011E6B004E4DD7 /* UserActionCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5F025F9D2701233C004E4DD7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5F025F9B27012334004E4DD7 /* Dogs.swift */,
+				5F025F9E2703ABF3004E4DD7 /* Cats.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5F025F792700DC38004E4DD7 /* CryptoCurrencyRateApp */ = {
+		5F025F792700DC38004E4DD7 /* DogsAndCatsPhotosApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5F025F8E2700DC39004E4DD7 /* Build configuration list for PBXNativeTarget "CryptoCurrencyRateApp" */;
+			buildConfigurationList = 5F025F8E2700DC39004E4DD7 /* Build configuration list for PBXNativeTarget "DogsAndCatsPhotosApp" */;
 			buildPhases = (
 				5F025F762700DC38004E4DD7 /* Sources */,
 				5F025F772700DC38004E4DD7 /* Frameworks */,
@@ -82,9 +118,9 @@
 			);
 			dependencies = (
 			);
-			name = CryptoCurrencyRateApp;
+			name = DogsAndCatsPhotosApp;
 			productName = CryptoCurrencyRateApp;
-			productReference = 5F025F7A2700DC38004E4DD7 /* CryptoCurrencyRateApp.app */;
+			productReference = 5F025F7A2700DC38004E4DD7 /* DogsAndCatsPhotosApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +138,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5F025F752700DC38004E4DD7 /* Build configuration list for PBXProject "CryptoCurrencyRateApp" */;
+			buildConfigurationList = 5F025F752700DC38004E4DD7 /* Build configuration list for PBXProject "DogsAndCatsPhotosApp" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +151,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5F025F792700DC38004E4DD7 /* CryptoCurrencyRateApp */,
+				5F025F792700DC38004E4DD7 /* DogsAndCatsPhotosApp */,
 			);
 		};
 /* End PBXProject section */
@@ -138,8 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F025F822700DC38004E4DD7 /* ViewController.swift in Sources */,
+				5F025F9C27012334004E4DD7 /* Dogs.swift in Sources */,
+				5F025F9427011D15004E4DD7 /* MainViewController.swift in Sources */,
 				5F025F7E2700DC38004E4DD7 /* AppDelegate.swift in Sources */,
+				5F025F9A27011E6B004E4DD7 /* UserActionCell.swift in Sources */,
+				5F025F9627011D3A004E4DD7 /* ImageViewController.swift in Sources */,
+				5F025F9F2703ABF3004E4DD7 /* Cats.swift in Sources */,
 				5F025F802700DC38004E4DD7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +331,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SLQ3BB6947;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CryptoCurrencyRateApp/Info.plist;
+				INFOPLIST_FILE = DogsAndCatsPhoto/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -302,11 +342,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dmitry.CryptoCurrencyRateApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmitry.DogsAndCatsPhoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,7 +359,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SLQ3BB6947;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CryptoCurrencyRateApp/Info.plist;
+				INFOPLIST_FILE = DogsAndCatsPhoto/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,18 +370,18 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dmitry.CryptoCurrencyRateApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmitry.DogsAndCatsPhoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5F025F752700DC38004E4DD7 /* Build configuration list for PBXProject "CryptoCurrencyRateApp" */ = {
+		5F025F752700DC38004E4DD7 /* Build configuration list for PBXProject "DogsAndCatsPhotosApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F025F8C2700DC39004E4DD7 /* Debug */,
@@ -350,7 +390,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5F025F8E2700DC39004E4DD7 /* Build configuration list for PBXNativeTarget "CryptoCurrencyRateApp" */ = {
+		5F025F8E2700DC39004E4DD7 /* Build configuration list for PBXNativeTarget "DogsAndCatsPhotosApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F025F8F2700DC39004E4DD7 /* Debug */,

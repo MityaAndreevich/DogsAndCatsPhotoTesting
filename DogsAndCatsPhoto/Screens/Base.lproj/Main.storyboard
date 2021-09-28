@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2d3-QK-BSE">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Choose Action-->
+        <scene sceneID="Gjp-bb-zTV">
+            <objects>
+                <collectionViewController id="6hJ-Vd-DmT" customClass="MainViewController" customModule="DogsAndCatsPhotosApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="pN9-7n-XeX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="40" minimumInteritemSpacing="40" id="JF6-Gw-d1c">
+                            <size key="itemSize" width="300" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="40" maxX="0.0" maxY="40"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="RfZ-Kr-Qog" customClass="UserActionCell" customModule="DogsAndCatsPhotosApp" customModuleProvider="target">
+                                <rect key="frame" x="10" y="40" width="300" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="OhK-NR-PPa">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="128"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIe-SV-3EK">
+                                            <rect key="frame" x="114" y="45.5" width="72" height="37"/>
+                                            <fontDescription key="fontDescription" name="Didot-Italic" family="Didot" pointSize="30"/>
+                                            <color key="textColor" red="0.60784316059999999" green="0.109803915" blue="0.1215686351" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="VIe-SV-3EK" firstAttribute="centerY" secondItem="OhK-NR-PPa" secondAttribute="centerY" id="ehZ-07-54G"/>
+                                        <constraint firstItem="VIe-SV-3EK" firstAttribute="centerX" secondItem="OhK-NR-PPa" secondAttribute="centerX" id="vC4-6e-jOZ"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="userActionName" destination="VIe-SV-3EK" id="dES-q1-X5m"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="6hJ-Vd-DmT" id="qud-OO-rbc"/>
+                            <outlet property="delegate" destination="6hJ-Vd-DmT" id="Awp-Un-S9b"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Choose Action" id="qVt-cU-Odl"/>
+                    <connections>
+                        <segue destination="d5y-Mb-G4J" kind="show" identifier="showDogImage" id="jPI-1d-OYn"/>
+                        <segue destination="d5y-Mb-G4J" kind="show" identifier="showCatImage" id="jmm-9M-bG5"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NME-9Q-CgE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="879" y="106"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="6ZA-31-bwd">
+            <objects>
+                <viewController id="d5y-Mb-G4J" customClass="ImageViewController" customModule="DogsAndCatsPhotosApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9J4-DL-CSA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ISU-kh-1km">
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Dhh-0W-IYW">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QIC-NQ-OBW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QIC-NQ-OBW" firstAttribute="trailing" secondItem="ISU-kh-1km" secondAttribute="trailing" id="6NO-ae-Rvg"/>
+                            <constraint firstItem="Dhh-0W-IYW" firstAttribute="centerY" secondItem="9J4-DL-CSA" secondAttribute="centerY" id="CAU-LE-zWg"/>
+                            <constraint firstItem="Dhh-0W-IYW" firstAttribute="centerX" secondItem="9J4-DL-CSA" secondAttribute="centerX" id="b8w-vz-cRR"/>
+                            <constraint firstItem="ISU-kh-1km" firstAttribute="top" secondItem="QIC-NQ-OBW" secondAttribute="top" id="eMj-iO-4Hf"/>
+                            <constraint firstItem="ISU-kh-1km" firstAttribute="leading" secondItem="QIC-NQ-OBW" secondAttribute="leading" id="lmp-6P-E9R"/>
+                            <constraint firstAttribute="bottom" secondItem="ISU-kh-1km" secondAttribute="bottom" id="oN6-X0-nRa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lx7-6n-2S6"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Dhh-0W-IYW" id="M6W-kL-kJH"/>
+                        <outlet property="imageView" destination="ISU-kh-1km" id="52G-vr-a3k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cxb-o8-8ax" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1789" y="-97"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6Ku-QY-yGx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2d3-QK-BSE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Dc-FV-cgw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6hJ-Vd-DmT" kind="relationship" relationship="rootViewController" id="aJ7-5t-dsJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j2J-gF-A1K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13.043478260869566" y="106.47321428571428"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="jmm-9M-bG5"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
