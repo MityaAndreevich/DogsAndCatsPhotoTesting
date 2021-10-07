@@ -77,33 +77,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ISU-kh-1km">
-                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
-                            </imageView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Dhh-0W-IYW">
                                 <rect key="frame" x="150" y="274" width="20" height="20"/>
                             </activityIndicatorView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CGh-aU-WcL">
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QIC-NQ-OBW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="QIC-NQ-OBW" firstAttribute="trailing" secondItem="ISU-kh-1km" secondAttribute="trailing" id="6NO-ae-Rvg"/>
+                            <constraint firstAttribute="bottom" secondItem="CGh-aU-WcL" secondAttribute="bottom" id="0Zi-zC-zIk"/>
                             <constraint firstItem="Dhh-0W-IYW" firstAttribute="centerY" secondItem="9J4-DL-CSA" secondAttribute="centerY" id="CAU-LE-zWg"/>
+                            <constraint firstItem="CGh-aU-WcL" firstAttribute="leading" secondItem="QIC-NQ-OBW" secondAttribute="leading" id="GiJ-Zu-DPr"/>
+                            <constraint firstItem="CGh-aU-WcL" firstAttribute="trailing" secondItem="QIC-NQ-OBW" secondAttribute="trailing" id="Ttk-YW-yDj"/>
                             <constraint firstItem="Dhh-0W-IYW" firstAttribute="centerX" secondItem="9J4-DL-CSA" secondAttribute="centerX" id="b8w-vz-cRR"/>
-                            <constraint firstItem="ISU-kh-1km" firstAttribute="top" secondItem="QIC-NQ-OBW" secondAttribute="top" id="eMj-iO-4Hf"/>
-                            <constraint firstItem="ISU-kh-1km" firstAttribute="leading" secondItem="QIC-NQ-OBW" secondAttribute="leading" id="lmp-6P-E9R"/>
-                            <constraint firstAttribute="bottom" secondItem="ISU-kh-1km" secondAttribute="bottom" id="oN6-X0-nRa"/>
+                            <constraint firstItem="CGh-aU-WcL" firstAttribute="top" secondItem="QIC-NQ-OBW" secondAttribute="top" id="dRu-Hp-u7P"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lx7-6n-2S6"/>
                     <connections>
                         <outlet property="activityIndicator" destination="Dhh-0W-IYW" id="M6W-kL-kJH"/>
-                        <outlet property="imageView" destination="ISU-kh-1km" id="52G-vr-a3k"/>
+                        <outlet property="animalImageView" destination="CGh-aU-WcL" id="sI2-Ea-aFb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cxb-o8-8ax" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1789" y="-97"/>
+            <point key="canvasLocation" x="1911" y="-89"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6Ku-QY-yGx">

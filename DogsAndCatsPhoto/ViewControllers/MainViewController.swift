@@ -7,11 +7,6 @@
 
 import UIKit
 
-enum Link: String {
-    case dogImage = "https://dog.ceo/api/breeds/image/random"
-    case catImage = "https://api.thecatapi.com/v1/images/search"
-}
-
 enum UserAction: String, CaseIterable {
     case downloadDogImage = "Download Image of a dog"
     case downloadCatImage = "Download Image of a cat"
@@ -29,7 +24,8 @@ class MainViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! UserActionCell
     
-        cell.userActionName.text = userActions[indexPath.item].rawValue
+        let userAction = userActions[indexPath.item]
+        cell.userActionName.text = userAction.rawValue
         return cell
     }
 
@@ -37,23 +33,19 @@ class MainViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let userAction = userActions[indexPath.row]
-        
         switch userAction {
         case .downloadDogImage: performSegue(withIdentifier: "showDogImage", sender: nil)
-            
         case .downloadCatImage: performSegue(withIdentifier: "showCatImage", sender: nil)
         }
     }
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier != "showImage" {
-            let imageVC = segue.destination as! ImageViewController
-            switch segue.identifier {
-            case "showDogImage": imageVC.fetchImageDog()
-            case "showCatImage": imageVC.fetchImageCat()
-            default: break
-            }
+        let imageVC = segue.destination as! ImageViewController
+        switch segue.identifier {
+        case "showDogImage": imageVC.fetchDogImage()
+        case "showCatImage": imageVC.fetchCatImage()
+        default: break
         }
     }
 }
@@ -63,3 +55,6 @@ extension MainViewController: UICollectionViewDelegateFlowLayout {
         CGSize(width: UIScreen.main.bounds.width - 48, height: 100)
     }
 }
+
+
+

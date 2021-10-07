@@ -9,74 +9,58 @@ import UIKit
 
 class ImageViewController: UIViewController {
     
-    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBOutlet weak var animalImageView: UIImageView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-    private var dog: Dogs!
-    private var cat: Cats!
+    private var dogs: Dogs!
+    var cats: Cats!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         activityIndicator.startAnimating()
         activityIndicator.hidesWhenStopped = true
-        //fetchImageDog()
-        //fetchImageCat()
     }
-    
 }
 
 extension ImageViewController {
-    
-  func fetchImageDog() {
-        guard let url = URL(string: Link.dogImage.rawValue) else { return }
-        
-        URLSession.shared.dataTask(with: url) { [self] data, _, error in
-            guard let data = data else {
-                print(error?.localizedDescription ?? "No error description")
-                return
-            }
-            do {
-                self.dog = try JSONDecoder().decode(Dogs.self, from: data)
-                guard let url2 = URL(string: dog.message ?? "") else { return }
-                guard let imageData = try? Data(contentsOf: url2) else { return }
-                DispatchQueue.main.async {
-                    self.imageView.image = UIImage(data: imageData)
-                }
-                DispatchQueue.main.async {
-                    self.imageView.reloadInputViews()
-                    activityIndicator.stopAnimating()
-                }
-                
-            } catch let error {
+    func fetchDogImage() {
+        NetworkManager.shared.fetch(dataType: Dogs.self, from: Link.dogImage.rawValue) { result in
+            switch result {
+            case .success(let dog):
+                self.animalImageView.image = UIImage(contentsOfFile: dog.message ?? "")
+                self.animalImageView.reloadInputViews()
+            case .failure(let error):
                 print(error.localizedDescription)
             }
-        }.resume()
+        }
     }
     
-    func fetchImageCat() {
-          guard let url = URL(string: Link.catImage.rawValue) else { return }
-          
-          URLSession.shared.dataTask(with: url) { [self] data, _, error in
-              guard let data = data else {
-                  print(error?.localizedDescription ?? "No error description")
-                  return
-              }
-              do {
-                  self.cat = try JSONDecoder().decode(Cats.self, from: data)
-                  guard let url2 = URL(string: cat.url ?? "") else { return }
-                  guard let imageData = try? Data(contentsOf: url2) else { return }
-                  DispatchQueue.main.async {
-                      self.imageView.image = UIImage(data: imageData)
-                  }
-                  DispatchQueue.main.async {
-                      self.imageView.reloadInputViews()
-                      activityIndicator.stopAnimating()
-                  }
-                  
-              } catch let error {
-                  print(error.localizedDescription)
-              }
-          }.resume()
-      }
+    func fetchCatImage() {
+        NetworkManager.shared.fetch(dataType: Cats.self, from: Link.catImage.rawValue) { result in
+            switch result {
+            case .success(let cat):
+                NetworkManager.shared.fetchImage(from: cat.url) { result in
+                    switch result {
+                    case .success(let catImage):
+                        self.animalImageView.image = UIImage(data: catImage)
+                        self.animalImageView.reloadInputViews()
+                    case .failure(let error):
+                        print(error)
+                    }
+                }
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    func printD() {
+        print(1)
+    }
+    
+    func printC() {
+        print(2)
+    }
 }
+
