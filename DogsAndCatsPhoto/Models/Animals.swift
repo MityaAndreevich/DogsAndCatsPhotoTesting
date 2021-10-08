@@ -11,5 +11,6 @@ struct Dogs: Decodable {
 }
 
 struct Cats: Codable {
+    let id: String?
     let url: String?
 }

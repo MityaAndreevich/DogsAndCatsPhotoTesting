@@ -28,8 +28,14 @@ extension ImageViewController {
         NetworkManager.shared.fetch(dataType: Dogs.self, from: Link.dogImage.rawValue) { result in
             switch result {
             case .success(let dog):
-                self.animalImageView.image = UIImage(contentsOfFile: dog.message ?? "")
-                self.animalImageView.reloadInputViews()
+                NetworkManager.shared.fetchImage(from: dog.message) { result in
+                    switch result {
+                    case .success(let dogImage):
+                        self.animalImageView.image = UIImage(data: dogImage)
+                    case .failure(let error):
+                        print(error)
+                    }
+                }
             case .failure(let error):
                 print(error.localizedDescription)
             }
