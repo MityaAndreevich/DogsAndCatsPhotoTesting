@@ -14,7 +14,7 @@ class ImageViewController: UIViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     private var dogs: Dogs!
-    var cats: Cats!
+    var cats: DogsV2!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,15 +42,15 @@ extension ImageViewController {
         }
     }
     
-    func fetchCatImage() {
-        NetworkManager.shared.fetch(dataType: Cats.self, from: Link.catImage.rawValue) { result in
+    func fetchDogV2Image() {
+        NetworkManager.shared.fetch(dataType: DogsV2.self, from: Link.dogV2Image.rawValue) { result in
             switch result {
-            case .success(let cat):
-                NetworkManager.shared.fetchImage(from: cat.url) { result in
+            case .success(let dog):
+                NetworkManager.shared.fetchImage(from: dog.url) { result in
                     switch result {
-                    case .success(let catImage):
+                    case .success(let dogV2Image):
                         DispatchQueue.main.async {
-                            self.animalImageView.image = UIImage(data: catImage)
+                            self.animalImageView.image = UIImage(data: dogV2Image)
                             self.animalImageView.reloadInputViews()
                         }
                     case .failure(let error):
@@ -61,14 +61,6 @@ extension ImageViewController {
                 print(error.localizedDescription)
             }
         }
-    }
-    
-    func printD() {
-        print(1)
-    }
-    
-    func printC() {
-        print(2)
     }
 }
 

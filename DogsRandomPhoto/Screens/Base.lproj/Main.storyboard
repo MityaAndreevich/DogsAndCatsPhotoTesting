@@ -62,7 +62,7 @@
                     <navigationItem key="navigationItem" title="Choose Action" id="qVt-cU-Odl"/>
                     <connections>
                         <segue destination="d5y-Mb-G4J" kind="show" identifier="showDogImage" id="jPI-1d-OYn"/>
-                        <segue destination="d5y-Mb-G4J" kind="show" identifier="showCatImage" id="jmm-9M-bG5"/>
+                        <segue destination="d5y-Mb-G4J" kind="show" identifier="showDogV2Image" id="jmm-9M-bG5"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NME-9Q-CgE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -10,7 +10,7 @@ struct Dogs: Decodable {
     let status: String?
 }
 
-struct Cats: Codable {
-    let id: String?
+struct DogsV2: Decodable {
     let url: String?
 }
+

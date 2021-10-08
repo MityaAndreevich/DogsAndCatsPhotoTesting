@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5F025F7A2700DC38004E4DD7 /* DogsAndCatsPhotosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogsAndCatsPhotosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F025F7A2700DC38004E4DD7 /* DogsRandomPhotoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogsRandomPhotoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F025F7D2700DC38004E4DD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F025F7F2700DC38004E4DD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5F025F842700DC38004E4DD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		5F025F712700DC38004E4DD7 = {
 			isa = PBXGroup;
 			children = (
-				5F025F7C2700DC38004E4DD7 /* DogsAndCatsPhoto */,
+				5F025F7C2700DC38004E4DD7 /* DogsRandomPhoto */,
 				5F025F7B2700DC38004E4DD7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,12 +56,12 @@
 		5F025F7B2700DC38004E4DD7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5F025F7A2700DC38004E4DD7 /* DogsAndCatsPhotosApp.app */,
+				5F025F7A2700DC38004E4DD7 /* DogsRandomPhotoApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5F025F7C2700DC38004E4DD7 /* DogsAndCatsPhoto */ = {
+		5F025F7C2700DC38004E4DD7 /* DogsRandomPhoto */ = {
 			isa = PBXGroup;
 			children = (
 				5F025F7D2700DC38004E4DD7 /* AppDelegate.swift */,
@@ -73,7 +73,7 @@
 				5F025F862700DC39004E4DD7 /* Assets.xcassets */,
 				5F025F8B2700DC39004E4DD7 /* Info.plist */,
 			);
-			path = DogsAndCatsPhoto;
+			path = DogsRandomPhoto;
 			sourceTree = "<group>";
 		};
 		5F025F912700DC72004E4DD7 /* Screens */ = {
@@ -114,9 +114,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5F025F792700DC38004E4DD7 /* DogsAndCatsPhotosApp */ = {
+		5F025F792700DC38004E4DD7 /* DogsRandomPhotoApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5F025F8E2700DC39004E4DD7 /* Build configuration list for PBXNativeTarget "DogsAndCatsPhotosApp" */;
+			buildConfigurationList = 5F025F8E2700DC39004E4DD7 /* Build configuration list for PBXNativeTarget "DogsRandomPhotoApp" */;
 			buildPhases = (
 				5F025F762700DC38004E4DD7 /* Sources */,
 				5F025F772700DC38004E4DD7 /* Frameworks */,
@@ -126,9 +126,9 @@
 			);
 			dependencies = (
 			);
-			name = DogsAndCatsPhotosApp;
+			name = DogsRandomPhotoApp;
 			productName = CryptoCurrencyRateApp;
-			productReference = 5F025F7A2700DC38004E4DD7 /* DogsAndCatsPhotosApp.app */;
+			productReference = 5F025F7A2700DC38004E4DD7 /* DogsRandomPhotoApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -146,7 +146,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5F025F752700DC38004E4DD7 /* Build configuration list for PBXProject "DogsAndCatsPhotosApp" */;
+			buildConfigurationList = 5F025F752700DC38004E4DD7 /* Build configuration list for PBXProject "DogsRandomPhotoApp" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -159,7 +159,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5F025F792700DC38004E4DD7 /* DogsAndCatsPhotosApp */,
+				5F025F792700DC38004E4DD7 /* DogsRandomPhotoApp */,
 			);
 		};
 /* End PBXProject section */
@@ -339,7 +339,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SLQ3BB6947;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DogsAndCatsPhoto/Info.plist;
+				INFOPLIST_FILE = DogsRandomPhoto/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -350,7 +350,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dmitry.DogsAndCatsPhoto;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmitry.DogsRandomPhoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -367,7 +367,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SLQ3BB6947;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DogsAndCatsPhoto/Info.plist;
+				INFOPLIST_FILE = DogsRandomPhoto/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -378,7 +378,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dmitry.DogsAndCatsPhoto;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmitry.DogsRandomPhoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -389,7 +389,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5F025F752700DC38004E4DD7 /* Build configuration list for PBXProject "DogsAndCatsPhotosApp" */ = {
+		5F025F752700DC38004E4DD7 /* Build configuration list for PBXProject "DogsRandomPhotoApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F025F8C2700DC39004E4DD7 /* Debug */,
@@ -398,7 +398,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5F025F8E2700DC39004E4DD7 /* Build configuration list for PBXNativeTarget "DogsAndCatsPhotosApp" */ = {
+		5F025F8E2700DC39004E4DD7 /* Build configuration list for PBXNativeTarget "DogsRandomPhotoApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F025F8F2700DC39004E4DD7 /* Debug */,

@@ -10,7 +10,7 @@ import UIKit
 
 enum Link: String {
     case dogImage = "https://dog.ceo/api/breeds/image/random"
-    case catImage = "https://api.thecatapi.com/v1/images/search"
+    case dogV2Image = "https://random.dog/woof.json"
 }
 
 enum NetworkError: Error {
