@@ -43,8 +43,10 @@ extension ImageViewController {
                 NetworkManager.shared.fetchImage(from: cat.url) { result in
                     switch result {
                     case .success(let catImage):
-                        self.animalImageView.image = UIImage(data: catImage)
-                        self.animalImageView.reloadInputViews()
+                        DispatchQueue.main.async {
+                            self.animalImageView.image = UIImage(data: catImage)
+                            self.animalImageView.reloadInputViews()
+                        }
                     case .failure(let error):
                         print(error)
                     }

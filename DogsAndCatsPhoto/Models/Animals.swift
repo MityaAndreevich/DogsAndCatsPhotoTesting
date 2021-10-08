@@ -7,6 +7,7 @@
 
 struct Dogs: Decodable {
     let message: String?
+    let status: String?
 }
 
 struct Cats: Codable {
