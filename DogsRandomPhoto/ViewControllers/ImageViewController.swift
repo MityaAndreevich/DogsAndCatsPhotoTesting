@@ -14,7 +14,7 @@ class ImageViewController: UIViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     private var dogs: Dogs!
-    var cats: DogsV2!
+    var dogs2: DogsV2!
     
     override func viewDidLoad() {
         super.viewDidLoad()
